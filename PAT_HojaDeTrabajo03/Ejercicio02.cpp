@@ -11,11 +11,10 @@ vector<vector<string>>* Ejercicio02::groupAnagrams(vector<string>& strings)
         anagramMap[sortedWord].push_back(word);
     }
 
-    std::vector<std::vector<std::string>>* result = new std::vector<std::vector<std::string>>;
-
-    for (auto it = anagramMap.begin(); it != anagramMap.end(); ++it) 
+   auto result = new vector<vector<string>>;
+    for (const auto& pair : anagramMap)
     {
-        result->push_back(it->second);
+        result->push_back(pair.second);
     }
     return result;
 }
