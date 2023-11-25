@@ -1,4 +1,6 @@
 #include "Ejercicio02.h"
+#include <unordered_map>
+#include <algorithm>
 
 vector<vector<string>>* Ejercicio02::groupAnagrams(vector<string>& strings)
 {
